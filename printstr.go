@@ -1,13 +1,13 @@
 package piscine
 
-import "github.com/01-edu/z01" 
+import "github.com/01-edu/z01"
 
 func PrintStr(str string) {
 
-slice := []rune(str)
+	slice := []rune(str)
 
-for _, word := range slice {
+	for _, word := range slice {
 
-	z01.PrintRune(rune(word))
-}
+		z01.PrintRune(rune(word))
+	}
 }
