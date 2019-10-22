@@ -1,11 +1,12 @@
 package main
 
 import (
-	"fmt"
 	piscine ".."
+	"fmt"
 )
 
 func main() {
-	fmt.Println(piscine.IsPrime(5))
-	fmt.Println(piscine.IsPrime(4))
+	str := "Hello 78 World!    4455 /"
+	nb := piscine.AlphaCount(str)
+	fmt.Println(nb)
 }
