@@ -2,7 +2,7 @@ package piscine
 
 func AlphaCount(str string) int {
 	k := []rune(str)
-	
+
 	bn := 0
 
 	for _, v := range k {
