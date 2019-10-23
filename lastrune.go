@@ -1,12 +1,23 @@
 package piscine
 
-func LastRune(s string) rune {
-	v := []rune(s)
+func Index(s string, toFind string) int {
+
+	sliceS := []rune(s)
+	sliceF := []rune(toFind)
+
 	n := 0
-	for index := range v {
-		index = index
+	v := 0
+
+	for range sliceS {
 		n++
 	}
-
-	return v[n-1]
+	for range sliceF {
+		v++
+	}
+	for i := 0; i <= n-v; i++ {
+		if toFind == s[i:(i+v)] {
+		return i
+		}
+	}
+	return -1
 }
