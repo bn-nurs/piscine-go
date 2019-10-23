@@ -1,8 +1,8 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	sliceS :=[]rune(s)
-	sliceF :=[]rune(toFind)
+	sliceS := []rune(s)
+	sliceF := []rune(toFind)
 	v := 0
 	for index := range sliceF {
 		index = index
