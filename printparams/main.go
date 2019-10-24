@@ -7,13 +7,14 @@ import (
 
 func main() {
 	arguments := os.Args
-	for i, str := range arguments {
-		if i > 0 {
-			v := []rune(str)
-			for _, letter := range v {
-				z01.PrintRune(letter)
+	for i := range arguments {
+		if i != 0 {
+			for _, result := range arguments[i] {
+				z01.PrintRune(result)
 			}
+			z01.PrintRune(10)
 		}
+
 	}
-	z01.PrintRune('\n')
+
 }
