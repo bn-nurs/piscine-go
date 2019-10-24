@@ -6,19 +6,15 @@ import (
 )
 
 func main() {
-	arg := os.Args
-	k := 0
-	for i := range arg {
-		i = i
-		k++
+	arguments := os.Args
+	a := 0
+	for range arguments {
+		a++
 	}
-	if i := k - 1; i > 0; i-- {
-		str := arg[i]
-		slice := []rune(str)
-		for _, letter := range slice {
-			z01.PrintRune(letter)
+	for i := a - 1; i > 0; i-- {
+		for _, z := range arguments[i] {
+			z01.PrintRune(z)
 		}
-		z01.PrintRune('\n')
+		z01.PrintRune(10)
 	}
-
 }
