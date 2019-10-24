@@ -6,11 +6,11 @@ import (
 )
 
 func main() {
-	v := os.Args
-	for i, str := range v {
+	arguments := os.Args
+	for i, str := range arguments {
 		if i > 0 {
-			j := []rune(str)
-			for _, letter := range j {
+			v := []rune(str)
+			for _, letter := range v {
 				z01.PrintRune(letter)
 			}
 		}
