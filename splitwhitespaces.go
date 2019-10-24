@@ -13,6 +13,7 @@ func SplitWhiteSpaces(str string) []string {
 				bn++
 			}
 		} else {
+
 		}
 		invi1 = w
 	}
@@ -30,10 +31,15 @@ func SplitWhiteSpaces(str string) []string {
 			if invi != ' ' && invi != '\t' && invi != '\n' {
 				cnt++
 			}
+
 		} else {
+
 			answer[cnt] += string(w)
+
 		}
 		invi = w
 	}
+
 	return answer
+
 }
